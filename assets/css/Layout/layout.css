@@ -173,3 +173,7 @@ ul {
     list-style-type: disc;
 
 }
+.swiper-slide{
+    width: 292px;
+    margin-right: 30px;
+}
