@@ -341,10 +341,12 @@ body{
     font-size: 60px;
 }
 #slider-area .slider .icons i:first-child{
-    top: 185px;
+    top: 10px;
     left: 10px;
+    text-align: center;
 }
 #slider-area .slider .icons i:last-child{
-    top: 185px;
+    top: 10px;
     right: 10px;
+    text-align: center;
 }

@@ -51,9 +51,6 @@ leftIcon.addEventListener("click",function(){
 
 })
 
-setInterval(() => {
-    rightSlider();
-}, 2000);
 
 
 
