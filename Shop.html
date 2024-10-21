@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/product/style.css" />
+    <link rel="stylesheet" href="assets/css/Layout/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-6 col-md-3 justify-content-center d-flex">
+                    <img src="assets/img/logo.png" alt="Logo" class="img-fluid">
+                </div>
+
+
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="header__navbar__offcanvas ">
+                                <li>
+                                    <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Home Style 1</a></li>
+                                        <li><a href="#">Home Style 2</a></li>
+                                        <li><a href="#">Home Style 3</a></li>
+                                        <li><a href="#">Home Style 4</a></li>
+                                        <li><a href="#">Home Style 5</a></li>
+                                        <li><a href="#">Home Style 6</a></li>
+                                        <li><a href="#">Home Style 7</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown" id="mega__dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Shop Pages</a>
+                                                <ul>
+                                                    <li><a href="">Standard Shop Page</a></li>
+                                                    <li><a href="">Shop Right Sidebar</a></li>
+                                                    <li><a href="">Shop 4 Column</a></li>
+                                                    <li><a href="">Shop 3 Column</a></li>
+                                                    <li><a href="">Shop Page</a></li>
+                                                    <li><a href="">Shop Page</a></li>
+                                                    <li><a href="">Shop Infinity</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Products Pages</a>
+                                                <ul>
+                                                    <li><a href="">Product Details</a></li>
+                                                    <li><a href="">Product Page V2</a></li>
+                                                    <li><a href="">Product Page V3</a></li>
+                                                    <li><a href="">Product Page V4</a></li>
+                                                    <li><a href="">Simple Product</a></li>
+                                                    <li><a href="">Variable Product</a></li>
+                                                    <li><a href="">External Product</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Other Shop Pages</a>
+                                                <ul>
+                                                    <li><a href="">Wishlist</a></li>
+                                                    <li><a href="">Compare</a></li>
+                                                    <li><a href="">Shopping Cart</a></li>
+                                                    <li><a href="">Checkout</a></li>
+                                                    <li><a href="">Register</a></li>
+                                                    <li><a href="">Login</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog Left Sidebar</a></li>
+                                        <li><a href="#">Blog No Sidebar</a></li>
+                                        <li><a href="#">Blog 2 Column</a></li>
+                                        <li><a href="#">Blog 3 Column</a></li>
+                                        <li><a href="#">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">Shopping Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Account</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Error 404</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <ul class="header__navbar__main d-none d-lg-flex">
+                        <li>
+                            <a href="./home.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Home Style 1</a></li>
+                                <li><a href="#">Home Style 2</a></li>
+                                <li><a href="#">Home Style 3</a></li>
+                                <li><a href="#">Home Style 4</a></li>
+                                <li><a href="#">Home Style 5</a></li>
+                                <li><a href="#">Home Style 6</a></li>
+                                <li><a href="#">Home Style 7</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown" id="mega__dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="#">Shop Pages</a>
+                                        <ul>
+                                            <li><a href="">Standard Shop Page</a></li>
+                                            <li><a href="">Shop Right Sidebar</a></li>
+                                            <li><a href="">Shop 4 Column</a></li>
+                                            <li><a href="">Shop 3 Column</a></li>
+                                            <li><a href="">Shop Page</a></li>
+                                            <li><a href="">Shop Page</a></li>
+                                            <li><a href="">Shop Infinity</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Products Pages</a>
+                                        <ul>
+                                            <li><a href="">Product Details</a></li>
+                                            <li><a href="">Product Page V2</a></li>
+                                            <li><a href="">Product Page V3</a></li>
+                                            <li><a href="">Product Page V4</a></li>
+                                            <li><a href="">Simple Product</a></li>
+                                            <li><a href="">Variable Product</a></li>
+                                            <li><a href="">External Product</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">Other Shop Pages</a>
+                                        <ul>
+                                            <li><a href="">Wishlist</a></li>
+                                            <li><a href="">Compare</a></li>
+                                            <li><a href="">Shopping Cart</a></li>
+                                            <li><a href="">Checkout</a></li>
+                                            <li><a href="">Register</a></li>
+                                            <li><a href="">Login</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Left Sidebar</a></li>
+                                <li><a href="#">Blog No Sidebar</a></li>
+                                <li><a href="#">Blog 2 Column</a></li>
+                                <li><a href="#">Blog 3 Column</a></li>
+                                <li><a href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./product.html">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Shopping Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Error 404</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3  header_action">
+                    <ul class="header__navbar__main">
+                        <li class="Searchmodal">
+                            <a><ion-icon name="search-outline"></ion-icon> Search </a>
+                        </li>
+                        <li>
+                            <a><ion-icon name="bag-outline"></ion-icon> Cart <span>(0)</span></a>
+                            <ul class="dropdown" id="cartDropDown">
+                                <h4>Your cart is empty</h4>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-none d-lg-flex"><i class="fa-solid fa-bars "></i></a>
+                            <button class="btn  d-lg-none d-flex" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <ul class="dropdown" id="Sidebar">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Create Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li>
+                                    <h5>Language</h5>
+                                </li>
+                                <li><a href="">English</a></li>
+                                <li><a href="">France</a></li>
+                                <li><a href="">Germany</a></li>
+                                <li><a href="">Bangla</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+</header>
+    <section class="ProductBaner">
+        <h2>Shop</h2>
+        <h6>Home / Shop</h6>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <h3 class="fs-4">Product Categories</h3>
+
+                <div class="dropdown">
+                    <button class="dropbtn">lighting & chair
+                        <ion-icon name="chevron-forward-sharp"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">lighting</a>
+                        <a href="#">chair</a>
+
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">decoration & accessories <ion-icon name="chevron-forward-sharp"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">decoration</a>
+                        <a href="#">accessories</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">clothing & oil <ion-icon name="chevron-forward-sharp"></ion-icon></button>
+                    <div class="dropdown-content">
+                        <a href="#">clothing</a>
+                        <a href="#">oil</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">fashion for men’s
+                        <ion-icon name="chevron-forward-sharp"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">shirt</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">fashion for women’s
+                        <ion-icon name="chevron-forward-sharp"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">shoes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">fashion for baby
+
+                        <ion-icon name="chevron-forward-sharp"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">shoes</a>
+
+
+                    </div>
+                </div>
+                <h4 class="fs-4 mb-5">
+                    Filter By Price
+
+                </h4>
+                <div class="slider-container mb-5 p-1">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="480" value="50" id="range-min" class="range-slider">
+                    <input type="range" min="0" max="480" value="430" id="range-max" class="range-slider">
+                    <div class="slider-values">
+                        <span id="min-value">50</span> - <span id="max-value">430</span>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-2">Filter</button>
+                    <h5 id="price-range">Price: $50 - $430</h5> 
+                </div>
+                <div class="AnySize">
+                    <h4 class="fs-4 mb-5 mt-5">Any Size</h4>
+                    <div class="d-flex gap-1">
+                        <button class="btn-size">L</button>
+                        <button class="btn-size">XL</button>
+                        <button class="btn-size">XXL</button>
+                        <button class="btn-size">M</button>
+                        <button class="btn-size">S</button>
+                    </div>
+                </div>
+                <div class="ChooseColor
+                ">
+                <h4 class="fs-4 mb-5 mt-5">Choose Color
+                </h4>
+                    <div class="d-flex gap-2">
+                        <button class="btn-color"></button>
+                        <button class="btn-color"></button>
+                        <button class="btn-color"></button>
+                        <button class="btn-color"></button>
+                        <button class="btn-color"></button>
+                        <button class="btn-color"></button>
+                        <button class="btn-color"></button>
+                        
+                    </div>
+            </div>
+            <div class="Brand mb-5">
+                <h4 class="fs-4 mb-5 mt-5">Brand</h4>
+                <div class="d-flex flex-column align-items-start  gap-1">
+                    <button class="btn btn-brand">Sony</button>
+                    <button class="btn  btn-brand">Panasonic</button>
+                    <button class=" btn btn-brand">Apple</button>
+                    <button class=" btn btn-brand">Samsung</button>
+                </div>
+            </div>
+            <button class="btn-2 btn">RESET FILTER</button>
+            <div class="FeaturedProducts">
+                <h4 class="fs-4 mb-5 mt-5">Featured Products</h4>
+                <div class="d-flex flex-column gap-1 mb-2">
+                    <div class="FeaturedProducts__card d-flex gap-2">
+                        <div class="img w-50">
+                            <img class="w-100" src="assets/img/product_1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="fs-6">
+                                Wooden container Bowl
+                            </p>
+                            <h6><span>$96</span> <span class="text-decoration-line-through text-secondary">$120</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-1 mb-2">
+                    <div class="FeaturedProducts__card d-flex gap-2">
+                        <div class="img w-50">
+                            <img class="w-100" src="assets/img/product_2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="fs-6">
+                                Wooden container Bowl
+                            </p>
+                            <h6><span>$96</span> <span class="text-decoration-line-through text-secondary">$120</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="container">
+                   
+                        <div class="row justify-content-between p-1">
+                            <div class="col-12 col-md-6">
+                                <h5 class="text-secondary fs-6">
+                                    Showing 1-12 of 23 results
+                                </h5>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="d-flex justify-content-end">
+                                    <select class="Product__select" name="" id="">
+                                        <option value="">default sorting </option>
+                                        <option value="">On Sale </option>
+                                        <option value="">Price High to Low</option>
+                                        <option value="">Price Low to High</option>
+                                    </select>
+                                    <button class="btn"><ion-icon name="apps-sharp"></ion-icon></button>
+                                    <button class="btn"><ion-icon name="list-sharp"></ion-icon></button>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                 
+                    <div class="row">
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="product__sale ">
+                                <span class="new">New</span>
+                                <span class="discount">-8%</span>
+                            </div>
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="product__sale ">
+                                <span class="new">New</span>
+                            </div>
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                     
+                      
+                        <div class="Product__card col-12 col-lg-4 col-md-6 ">
+                            <div class="img">
+                                <img class="product__thumb-1" src="assets/img/product_1.png" alt="">
+                                <img class="product__thumb-2" src="assets/img/product_3.png" alt="">
+                            </div>
+                            <div class="product_action">
+                                <button><ion-icon name="heart-outline"></ion-icon></button>
+                                <button> <ion-icon name="options-outline"></ion-icon></button>
+                                <button><ion-icon name="search-outline"></ion-icon></button>
+
+                            </div>
+                            <h4>
+                                Wooden container Bowl
+                            </h4>
+                            <div class="Product__price">
+                                <div class="price">
+                                    <span>$96.00</span>
+                                    <span class="discount">$120.00</span>
+                                </div>
+                                <button><ion-icon name="add-outline"></ion-icon> Add to Cart</button>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link text-dark" href="#"><ion-icon
+                                            name="chevron-forward-sharp"></ion-icon></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer_area footer-bg">
+        <div class="footer_top pt-100 pb-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                        <div class="footer__widget mb-30">
+                            <div class="footer__widget-title mb-25"><a href=""><img src="./assets/img/logo-2.png"></a>
+                            </div>
+                            <div class="footer__widget-content">
+                                <p>Outstock is a premium Templates theme with advanced admin module. It’s extremely
+                                    customizable, easy to use and fully responsive and retina ready.</p>
+                                <div class="footer__contact">
+                                    <ul>
+                                        <li>
+                                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                                            <div class="text"><span> Add: 1234 Heaven Stress, Beverly Hill, Melbourne,
+                                                    USA.</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                                            <div class="text"><span> Email: Contact@basictheme.com</span></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                                            <div class="text"><span> Phone Number: (800) 123 456 789</span></div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                        <div class="footer__widget mb-30">
+                            <div class="footer__widget-title">
+                                <h5>Information</h5>
+                            </div>
+                            <div class="footer__widget-content">
+                                <div class="footer__links">
+                                    <ul>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">Delivery Inforamtion</a></li>
+                                        <li><a href="">Privacy Policy</a></li>
+                                        <li><a href="">Terms & Condition</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+                        <div class="footer__widget mb-30">
+                            <div class="footer__widget-title mb-25">
+                                <h5>Customer Service</h5>
+                            </div>
+                            <div class="footer__widget-content">
+                                <div class="footer__links">
+                                    <ul>
+                                        <li><a href="">Shipping Policy</a></li>
+                                        <li><a href="">Help & Contact Us</a></li>
+                                        <li><a href="">Returns & Refunds</a></li>
+                                        <li><a href="">Online Stores</a></li>
+                                        <li><a href="">Terms & Condition</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="footer_copyright">
+                            <p>Copyright © <a>Outstock</a> all rights reserved. Powered by <a>Theme_pure</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5">
+                        <div class="footer__social f-right">
+                            <ul>
+                                <li><a href=""><i class="fa-facebook-f fab"></i></a></li>
+                                <li><a href=""><i class="fa-twitter fab"></i></a></li>
+                                <li><a href=""><i class="fa-behance fab"></i></a></li>
+                                <li><a href=""><i class="fa-dribbble fab"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="ScrollTop d-none"> <ion-icon name="return-up-back-outline"></ion-icon></button>
+
+   <!-- Ionicons , Font Awesome -->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="https://kit.fontawesome.com/ebcf0b2dd8.js" crossorigin="anonymous"></script>
+
+   <!-- jQuery ve jQuery Migrate -->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+   <!-- Slick Carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+       integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+       integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- Bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+       crossorigin="anonymous"></script>
+
+   <!-- Custom JS-->
+   <script src="./assets/js/home/script.js"></script>
+   <script src="./assets/js/product/script.js"></script>
+</body>
+
+</html>
